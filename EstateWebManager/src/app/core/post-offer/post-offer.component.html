@@ -1,0 +1,127 @@
+<form class="post-offer" [formGroup]="postOffer">
+    <div class="header-info">
+        <mat-form-field class="title" appearance="fill">
+          <mat-label>Title</mat-label>
+          <input type="text" matInput formControlName="title">
+        </mat-form-field>
+    
+        <mat-form-field class="description" appearance="fill">
+            <mat-label>Description</mat-label>
+            <input type="text" matInput formControlName="description">
+        </mat-form-field>
+    </div>
+  
+    <div class="contact-info">
+        <mat-form-field class="contact-name" appearance="fill">
+            <mat-label>Contact name</mat-label>
+            <input type="text" matInput formControlName="contactName">
+        </mat-form-field>
+        <mat-form-field class="contact-phone" appearance="fill">
+            <mat-label>Phone</mat-label>
+            <input type="tel" matInput formControlName="contactPhone">
+        </mat-form-field>
+        <mat-form-field class="contact-email" appearance="fill">
+            <mat-label>Email</mat-label>
+            <input type="email" matInput formControlName="contactEmail">
+        </mat-form-field>
+    </div>
+
+    <div class="estate-address">
+        <mat-form-field class="street" appearance="fill">
+            <mat-label>Street</mat-label>
+            <input type="text" matInput formControlName="street">
+        </mat-form-field>
+        <mat-form-field class="number" appearance="fill">
+            <mat-label>Number</mat-label>
+            <input type="number" matInput formControlName="number">
+        </mat-form-field>
+        <mat-form-field class="floor" appearance="fill">
+            <mat-label>Floor</mat-label>
+            <input type="number" matInput formControlName="floor">
+        </mat-form-field>
+        <mat-form-field class="door" appearance="fill">
+            <mat-label>Door</mat-label>
+            <input type="number" matInput formControlName="door">
+        </mat-form-field>
+    </div>
+
+    <div class="estate-location">
+        <mat-form-field class="area" appearance="fill" floatLabel="auto">
+            <mat-label>Area</mat-label>
+            <mat-select formControlName="area" (selectionChange)="setArea($event.value)">
+                <mat-option *ngFor="let area of areas;" [value]="area">
+                    Neighborhood: {{ area.neighborhood }}, City: {{ area.city }}, Country: {{ area.country }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field class="zip-code" appearance="fill">
+            <mat-label>Zip Code</mat-label>
+            <input type="text" matInput formControlName="zipCode">
+        </mat-form-field>
+        <mat-form-field class="latitude" appearance="fill">
+            <mat-label>Latitude</mat-label>
+            <input type="number" matInput formControlName="latitude">
+        </mat-form-field>
+        <mat-form-field class="longitude" appearance="fill">
+            <mat-label>Longitude</mat-label>
+            <input type="number" matInput formControlName="longitude">
+        </mat-form-field>
+    </div>
+
+    <div class="estate-info" cellspacing="0">
+        <mat-form-field class="transaction-type" appearance="fill" floatLabel="auto">
+            <mat-label>Transaction type</mat-label>
+            <mat-select formControlName="transactionType">
+                <mat-option value="Sale">Sale</mat-option>
+                <mat-option value="Rent">Rent</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field class="price" appearance="fill">
+            <mat-label>Price</mat-label>
+            <input type="number" matInput formControlName="price">
+        </mat-form-field>
+        <mat-form-field class="currency" appearance="fill">
+            <mat-label>Currency</mat-label>
+            <mat-select formControlName="currency">
+                <mat-option value="£">GBP - £</mat-option>
+                <mat-option value="$">USD - $</mat-option>
+                <mat-option value="€">EUR - €</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field class="rating" appearance="fill">
+            <mat-label>Rating</mat-label>
+            <mat-select formControlName="rating">
+                <mat-option value="Green">Green</mat-option>
+                <mat-option value="A">A</mat-option>
+                <mat-option value="B">B</mat-option>
+                <mat-option value="C">C</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field class="built-up-area" appearance="fill">
+            <mat-label>Built up area</mat-label>
+            <input type="number" matInput formControlName="builtUpArea">
+        </mat-form-field>
+    </div>
+
+    <div class="options-select">
+        <div class="ac">
+            <input type="checkbox" name="ac" formControlName="ac" />
+            <label for="ac">AC</label>
+        </div>
+        <div class="internet">
+            <input type="checkbox" name="internet" formControlName="internet" />
+            <label for="internet">Internet</label>
+        </div>
+        <div class="parking">
+            <input type="checkbox" name="parking" formControlName="parking" />
+            <label for="parking">Parking</label>
+        </div>
+        <div class="image">
+            <mat-label>Images</mat-label>
+            <input type="file" formControlName="image" (change)="onImageChange($event)" />
+            <!-- <button mat-button type="submit" (click)="uploadImages()">Upload</button> -->
+        </div>
+    </div>
+
+    <button mat-button class="submit" type="submit" (click)="submitEstate()">Submit</button>
+  </form>

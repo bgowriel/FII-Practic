@@ -1,0 +1,39 @@
+<div class="option-range">
+    <mat-selection-list>
+        <mat-list-option class="ac" checkboxPosition="before" [(ngModel)]="acChecked" (selectedChange)="acChecked.emit($event)">AC</mat-list-option>
+    </mat-selection-list>
+
+    <mat-selection-list>
+        <mat-list-option class="internet" checkboxPosition="before" [(ngModel)]="internetChecked" (selectedChange)="internetChecked.emit($event)">Internet</mat-list-option>
+    </mat-selection-list>
+
+    <mat-selection-list>
+        <mat-list-option class="parkingPlace" checkboxPosition="before" [(ngModel)]="parkingChecked" (selectedChange)="parkingChecked.emit($event)">Parking</mat-list-option>
+    </mat-selection-list>
+
+    <mat-form-field>
+        <mat-label>Minimum area</mat-label>
+        <input matInput type="number" [(ngModel)]="minArea" (input)="minimumArea.emit(minArea)"/>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Rating</mat-label>
+        <mat-select (selectionChange)="setRating($event.value)">
+            <mat-option value="Green">Green</mat-option>
+            <mat-option value="A">A</mat-option>
+            <mat-option value="B">B</mat-option>
+            <mat-option value="C">C</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>City</mat-label>
+        <mat-select (selectionChange)="setCity($event.value)">
+            <mat-option *ngFor="let city of cities" [value]="city">
+                {{ city }}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <button type="submit" *ngIf="minimumArea && rating && currentCity" mat-button (click)="this.submit.emit('withOptions')">Search</button>
+</div>

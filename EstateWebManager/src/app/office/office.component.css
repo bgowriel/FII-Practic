@@ -1,0 +1,168 @@
+.offices {
+  font-size: 3rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: row;
+  height: 90vh;
+}
+
+.main-content {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mat-accordion .mat-expansion-panel:first-of-type,
+.mat-accordion .mat-expansion-panel:last-of-type {
+  border-radius: 0;
+}
+
+mat-expansion-panel {
+  background-color: var(--menu-background-pale);
+  padding: 1.5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 0.1rem;
+  border-radius: 0;
+}
+
+mat-panel-title {
+  color: var(--summer-gold);
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.4);
+  line-height: 3rem;
+  letter-spacing: 0.3rem;
+}
+
+.mat-expanded {
+  background-color: #ecc64bbb; /*var(--yellow);*/
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.mat-expansion-panel-header.mat-expanded {
+  margin-bottom: 1.5rem;
+}
+
+.mat-expansion-panel-header.mat-expanded .mat-expansion-panel-header-title {
+  color: var(--menu-background);
+}
+
+.results-viewport, app-post-offer {
+  font-size: 2rem;
+  margin-top: 0rem;
+  height: 100%;
+  width: 70vw;
+  /* border: 1px solid black; */
+  color: black;
+}
+
+.main-content-header, p.postOffer-header {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
+}
+
+mat-label.post-an-offer, .manage-offers {
+  font-size: 2rem;
+}
+
+app-paginator.result-paginator {
+  background-color: var(--menu-background-pale);
+  font-size: 2rem;
+}
+
+.office-item {
+    line-height: 2.2rem;
+    padding-top: 2rem;
+    background: linear-gradient(90deg, rgba(236,198,75,.85) 0%, rgba(236,198,75,.75) 70%, rgba(255,199,19,0) 100%);
+}
+
+.office-item:hover {
+  background: linear-gradient(90deg, rgba(236, 139, 75, 0.85) 0%, rgba(236,198,75,.75) 70%, rgba(255,199,19,0) 100%);
+  cursor: pointer;
+}
+
+.office-item-border {
+    width: 100%;
+    height: .3rem;
+    margin-top: 2rem;
+    background: linear-gradient(90deg, rgba(52,62,72,0) 0%, rgba(52,62,72,0.75) 40%, rgba(52,62,72,0.85) 100%);
+}
+
+.office-item p {
+    font-weight: 600;
+    letter-spacing: normal;
+    text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.4);
+    word-wrap: break-word;
+}
+
+.office-item span {
+    font-weight: normal;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+.info-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.info-area-text {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  min-width: 70%;
+  column-gap: 4rem;
+  height: 80%;
+}
+
+.info-area app-estate-card {
+    margin-right: 2rem;
+}
+
+img {
+  height: 10rem;
+  padding-left: 5rem;
+}
+
+.estate-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ecc64bbb;
+  width: 70vw;
+  color: black;
+  font-size: 2rem;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+
+.back-button, .delete-button {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
+  font-size: 2rem;
+  color: var(--summer-gold);
+  background-color: var(--menu-background-pale);
+  width: 12rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,68 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import "../node_modules/bootstrap/dist/css/bootstrap.min.css"; */
+@import url(https://fonts.googleapis.com/css?family=Lato:100,400);
+
+:root {
+  --menu-background: #343e48;
+  --menu-background-pale: #343e48bb;
+  --blue: #4795c3;
+  --grey: #686f77;
+  --summer-gold: wheat;/* #c0c0c0;*/
+  /* --white-grey-pale: #c0c0c099; */
+  --yellow: #ecc64b;
+  --green: #0b9ea6;
+  /* --green-pale: #0b9ea6bb; */
+  --red: #f26667;
+  --purple: #da70d6;
+  /* --purple-pale: #da70d699; */
+  --brown: #8b4513;
+}
+
+html {
+  height: 100%;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  font-family: 'Lato', sans-serif;
+  /*OPTIONAL: font-family:Roboto, "Helvetica Neue", sans-serif*/
+  font-size: 10px;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url("assets/luxury-real-estate-blur.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  /* font-family: Roboto, "Helvetica Neue", sans-serif; */
+  font-size: 2rem;
+}
+
+.mat-body, .mat-body-1, .mat-typography {
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+}
+
+footer {
+  height: 5%;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+footer p {
+  text-shadow: .1rem .1rem var(--menu-background);
+  letter-spacing: .2rem;
+}
+
+.mat-paginator .mat-select-value {
+  color: white;
+}
+
+.mat-paginator .mat-select-arrow {
+  color: white;
+}

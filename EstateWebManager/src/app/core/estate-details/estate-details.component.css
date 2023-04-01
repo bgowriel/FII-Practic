@@ -1,0 +1,27 @@
+.estate-info p {
+    font-weight: 600;
+    letter-spacing: normal;
+    text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.4);
+    word-wrap: break-word;
+    /* padding-left: 1rem; */
+    line-height: 2rem;
+}
+
+.estate-info span {
+    font-weight: normal;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+.estate-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.estate-images img {
+    height: 35rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}

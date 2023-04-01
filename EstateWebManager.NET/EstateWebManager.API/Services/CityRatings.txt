@@ -1,0 +1,6 @@
+At 01.04.2023 22:43:16 the city ratings are:
+
+	City Iasi has rating 3
+	City Timisoara has rating 2
+	City West Casandramouth has rating 1
+	City Cluj-Napoca has rating 3

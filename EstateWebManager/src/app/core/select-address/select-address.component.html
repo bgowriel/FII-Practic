@@ -1,0 +1,27 @@
+<div>
+    <mat-form-field appearance="fill" floatLabel="auto">
+        <mat-label>Country</mat-label>
+        <mat-select #countryValue (selectionChange)="setCountry($event.value)">
+            <mat-option *ngFor="let country of countries" [value]="country">
+                {{ country }}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field *ngIf="country" appearance="fill">
+        <mat-label>City</mat-label>
+        <mat-select #cityValue (selectionChange)="setCity($event.value)">
+            <mat-option *ngFor="let city of cities" [value]="city">
+                {{ city }}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field *ngIf="city" appearance="fill">
+        <mat-label>Street</mat-label>
+        <mat-select #streetValue (selectionChange)="setStreet($event.value)">
+            <mat-option *ngFor="let street of streets" [value]="street">
+                {{ street }}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <button type="submit" *ngIf="country" mat-button (click)="this.submit.emit('byAddress')">Search</button>
+</div>

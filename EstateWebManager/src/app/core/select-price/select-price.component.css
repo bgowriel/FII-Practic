@@ -1,0 +1,22 @@
+.price-range {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.mat-input-element {
+    font-size: 1.8rem;
+}
+
+.mat-button {
+    font-size: 1.8rem;
+    height: 4rem;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,.04);
+    text-shadow: .1rem .1rem rgba(0, 0, 0, 0.4);
+}
+
+#cdk-accordion-child-1 > div {
+    padding-top: 1.5rem;
+}

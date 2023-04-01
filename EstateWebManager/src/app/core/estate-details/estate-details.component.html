@@ -1,0 +1,19 @@
+<div class="estate-info">
+    <div>
+      <p><span>Title: </span>{{ office.title }}</p>
+      <p><span>Description: </span>{{ office.description }}</p>
+      <p><span>Contact: </span>{{ office.contactName }}</p>
+      <p><span>Phone: </span>{{ office.contactPhone }} <span>E-mail: </span>{{ office.contactMail }}</p>
+      <p><span>Address: </span>{{ office.street }} {{ office.number }} <span>Zip code: </span>{{ office.zipCode }}</p>
+      <p><span>Building </span>{{ office.building }}, <span>floor</span> {{ office.floorNumber }}, <span>suite</span> {{ office.doorNumber }}</p>
+      <p><span>Rating: </span>{{ office.rating }}, <span>Area: </span>{{ office.builtUpArea }} sqm, <span>AC - </span>{{ office.ac }}, <span>internet - </span>{{ office.internet }}, <span>parking place - </span>{{ office.parkingPlace }}</p>
+      <p><span>Last update: </span>{{ office.lastUpdate | date:"dd-MM-YYYY" }} <span>Available starting: </span>{{ office.availableStarting | date:"dd-MM-YYYY" }}</p>
+      <p><span>Rent at </span>{{ office.price }} {{ office.currency }} per {{ office.periodOfTime }}.</p>
+    </div>
+    <div class="estate-images" *ngFor="let img of office.images">
+        <img src="{{ img.imageUri }}"/>
+        <!-- <div id="geolocation"></div> -->
+        <img src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/{{office.longitude}},{{office.latitude}},10.25,0,60/500x350?access_token=pk.eyJ1IjoiYmdvd3JpZWwiLCJhIjoiY2w5ZHhnMXNtMGswZTN4b2dnM2MwMXd0OSJ9.g_0gI0urJFG2i-8j3zM3Ow" />
+    </div>
+    <!-- <app-estate-card [estate]="office"></app-estate-card> -->
+</div>

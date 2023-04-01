@@ -1,0 +1,78 @@
+#logocontainer {
+    display:block;
+    position:fixed;
+    width:25rem;
+    height:14rem;
+    overflow:hidden;
+    transition:background-color 500ms;
+    z-index: 1;
+}
+  
+#ewmlogo {
+    display: block;
+    position: absolute;
+    left: 1.5rem;
+    top: 1.5rem;
+    width: 22rem;
+    height: 11rem;
+    /* background-color: var(--menu-background); */
+    /* background: #34324b; */
+    background: -moz-linear-gradient(-45deg, #34324b 0%, #161222 100%);
+    background: -webkit-linear-gradient(-45deg, #34324b 0%,#161222 100%);
+    background: linear-gradient(135deg, #2f2879 0%,#04093a 100%);
+    background-size: contain;
+    z-index: -1;
+}
+
+#ewmlogo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAB9JREFUeNpiZmBg6AZiDiBWZ4YyQMCOCcYA4kMAAQYAHyYCCUdxidgAAAAASUVORK5CYII=");
+    z-index: -1;
+}
+
+#ewmlogo > p {
+    /* font-family: Trebuchet MS, sans-serif; */
+    font-size: 7rem;
+    font-weight: 900;
+    letter-spacing: .2rem;
+    color: var(--yellow);
+    text-align: center;
+    text-shadow: .2rem .2rem rgba(0, 0, 0, 0.4);
+    position: relative;
+    top: 4rem;
+    z-index: 1;
+}
+
+.loader {
+    display:block;
+    position:absolute;
+    background-color: #ecc64b99;
+}
+
+/*Pretty complex animation, so each side needs its own @keyframes.*/
+  
+@keyframes slide1 {
+    50%{width:25rem; margin-left:0;}
+    100%{margin-left:25rem;}
+}
+
+@keyframes slide2 {
+    50%{height:25rem; margin-top:0;}
+    100%{margin-top:25rem;}
+}
+
+@keyframes slide3 {
+    50%{width:25rem; margin-right:0;}
+    100%{margin-right:25rem;}
+}
+
+@keyframes slide4 {
+    50%{height:25rem; margin-bottom:0}
+    100%{margin-bottom:25rem;}
+}

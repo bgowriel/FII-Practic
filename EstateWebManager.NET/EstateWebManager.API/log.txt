@@ -1,0 +1,200 @@
+info: 01.04.2023 17:00:32.067 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (90ms) [Parameters=[@__normalizedUserName_0='BOGDAN.ADMIN@EXAMPLE.COM' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+info: 01.04.2023 17:00:32.312 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[@__userId_0='a25fd42c-5dd6-4003-9e69-cd4561999fff' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT [a0].[Name]
+      FROM [AspNetUserRoles] AS [a]
+      INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+      WHERE [a].[UserId] = @__userId_0
+info: 01.04.2023 17:00:32.929 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[@__p_0='100'], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_0) [a].[Id], [a].[AverageTemperature], [a].[City], [a].[Continent], [a].[Country], [a].[County], [a].[Criminality], [a].[LivingCost], [a].[Neighborhood], [a].[PhonePrefix], [a].[Pollution], [a].[ShortName], [a].[Traffic]
+      FROM [Areas] AS [a]
+info: 01.04.2023 17:00:33.046 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[@__p_0='100'], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_0) [a].[Id], [a].[AverageTemperature], [a].[City], [a].[Continent], [a].[Country], [a].[County], [a].[Criminality], [a].[LivingCost], [a].[Neighborhood], [a].[PhonePrefix], [a].[Pollution], [a].[ShortName], [a].[Traffic]
+      FROM [Areas] AS [a]
+info: 01.04.2023 17:00:33.089 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[@__p_0='100'], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_0) [a].[Id], [a].[AverageTemperature], [a].[City], [a].[Continent], [a].[Country], [a].[County], [a].[Criminality], [a].[LivingCost], [a].[Neighborhood], [a].[PhonePrefix], [a].[Pollution], [a].[ShortName], [a].[Traffic]
+      FROM [Areas] AS [a]
+info: 01.04.2023 17:07:59.572 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='BOGDAN.ADMIN@EXAMPLE.COM' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+      FROM [AspNetUsers] AS [a]
+      WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+info: 01.04.2023 17:07:59.583 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[@__userId_0='a25fd42c-5dd6-4003-9e69-cd4561999fff' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT [a0].[Name]
+      FROM [AspNetUserRoles] AS [a]
+      INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+      WHERE [a].[UserId] = @__userId_0
+info: 01.04.2023 17:07:59.717 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[@__p_0='100'], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_0) [a].[Id], [a].[AverageTemperature], [a].[City], [a].[Continent], [a].[Country], [a].[County], [a].[Criminality], [a].[LivingCost], [a].[Neighborhood], [a].[PhonePrefix], [a].[Pollution], [a].[ShortName], [a].[Traffic]
+      FROM [Areas] AS [a]
+info: 01.04.2023 17:07:59.751 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[@__p_0='100'], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_0) [a].[Id], [a].[AverageTemperature], [a].[City], [a].[Continent], [a].[Country], [a].[County], [a].[Criminality], [a].[LivingCost], [a].[Neighborhood], [a].[PhonePrefix], [a].[Pollution], [a].[ShortName], [a].[Traffic]
+      FROM [Areas] AS [a]
+info: 01.04.2023 17:07:59.777 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[@__p_0='100'], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_0) [a].[Id], [a].[AverageTemperature], [a].[City], [a].[Continent], [a].[Country], [a].[County], [a].[Criminality], [a].[LivingCost], [a].[Neighborhood], [a].[PhonePrefix], [a].[Pollution], [a].[ShortName], [a].[Traffic]
+      FROM [Areas] AS [a]
+info: 01.04.2023 17:08:32.013 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[@__country_0='Romania' (Size = 100)], CommandType='Text', CommandTimeout='30']
+      SELECT [a].[Id], [a].[AverageTemperature], [a].[City], [a].[Continent], [a].[Country], [a].[County], [a].[Criminality], [a].[LivingCost], [a].[Neighborhood], [a].[PhonePrefix], [a].[Pollution], [a].[ShortName], [a].[Traffic]
+      FROM [Areas] AS [a]
+      WHERE [a].[Country] = @__country_0
+info: 01.04.2023 17:08:35.389 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (6ms) [Parameters=[@__city_0='Iasi' (Size = 100), @__country_1='Romania' (Size = 100)], CommandType='Text', CommandTimeout='30']
+      SELECT [r].[Id], [r].[AreaId], [r].[Building], [r].[ContactMail], [r].[ContactName], [r].[ContactPhone], [r].[Currency], [r].[Description], [r].[DoorNumber], [r].[FloorNumber], [r].[LastUpdate], [r].[Latitude], [r].[Longitude], [r].[Number], [r].[PeriodOfTime], [r].[Price], [r].[Street], [r].[Title], [r].[TransactionType], [r].[Type], [r].[UserId], [r].[ZipCode], [o].[AC], [o].[AvailableStarting], [o].[BuiltUpArea], [o].[Internet], [o].[ParkingPlace], [o].[Rating], [a].[Id], [a].[AverageTemperature], [a].[City], [a].[Continent], [a].[Country], [a].[County], [a].[Criminality], [a].[LivingCost], [a].[Neighborhood], [a].[PhonePrefix], [a].[Pollution], [a].[ShortName], [a].[Traffic], [i].[Id], [i].[ImageUri], [i].[RealEstateId]
+      FROM [RealEstate] AS [r]
+      INNER JOIN [Offices] AS [o] ON [r].[Id] = [o].[Id]
+      INNER JOIN [Areas] AS [a] ON [r].[AreaId] = [a].[Id]
+      LEFT JOIN [Images] AS [i] ON [r].[Id] = [i].[RealEstateId]
+      WHERE ([a].[City] = @__city_0) AND ([a].[Country] = @__country_1)
+      ORDER BY [r].[Id], [a].[Id]
+info: 01.04.2023 17:08:41.043 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[@__city_0='Iasi' (Size = 100), @__country_1='Romania' (Size = 100)], CommandType='Text', CommandTimeout='30']
+      SELECT [r].[Id], [r].[AreaId], [r].[Building], [r].[ContactMail], [r].[ContactName], [r].[ContactPhone], [r].[Currency], [r].[Description], [r].[DoorNumber], [r].[FloorNumber], [r].[LastUpdate], [r].[Latitude], [r].[Longitude], [r].[Number], [r].[PeriodOfTime], [r].[Price], [r].[Street], [r].[Title], [r].[TransactionType], [r].[Type], [r].[UserId], [r].[ZipCode], [o].[AC], [o].[AvailableStarting], [o].[BuiltUpArea], [o].[Internet], [o].[ParkingPlace], [o].[Rating], [a].[Id], [a].[AverageTemperature], [a].[City], [a].[Continent], [a].[Country], [a].[County], [a].[Criminality], [a].[LivingCost], [a].[Neighborhood], [a].[PhonePrefix], [a].[Pollution], [a].[ShortName], [a].[Traffic], [i].[Id], [i].[ImageUri], [i].[RealEstateId]
+      FROM [RealEstate] AS [r]
+      INNER JOIN [Offices] AS [o] ON [r].[Id] = [o].[Id]
+      INNER JOIN [Areas] AS [a] ON [r].[AreaId] = [a].[Id]
+      LEFT JOIN [Images] AS [i] ON [r].[Id] = [i].[RealEstateId]
+      WHERE ([a].[City] = @__city_0) AND ([a].[Country] = @__country_1)
+      ORDER BY [r].[Id], [a].[Id]
+info: 01.04.2023 17:09:51.759 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (9ms) [Parameters=[@__city_0='Timisoara' (Size = 100), @__min_1='200', @__max_2='100000', @__currency_3='€' (Size = 15)], CommandType='Text', CommandTimeout='30']
+      SELECT [r].[Id], [r].[AreaId], [r].[Building], [r].[ContactMail], [r].[ContactName], [r].[ContactPhone], [r].[Currency], [r].[Description], [r].[DoorNumber], [r].[FloorNumber], [r].[LastUpdate], [r].[Latitude], [r].[Longitude], [r].[Number], [r].[PeriodOfTime], [r].[Price], [r].[Street], [r].[Title], [r].[TransactionType], [r].[Type], [r].[UserId], [r].[ZipCode], [o].[AC], [o].[AvailableStarting], [o].[BuiltUpArea], [o].[Internet], [o].[ParkingPlace], [o].[Rating], [a].[Id], [a].[AverageTemperature], [a].[City], [a].[Continent], [a].[Country], [a].[County], [a].[Criminality], [a].[LivingCost], [a].[Neighborhood], [a].[PhonePrefix], [a].[Pollution], [a].[ShortName], [a].[Traffic], [i].[Id], [i].[ImageUri], [i].[RealEstateId]
+      FROM [RealEstate] AS [r]
+      INNER JOIN [Offices] AS [o] ON [r].[Id] = [o].[Id]
+      INNER JOIN [Areas] AS [a] ON [r].[AreaId] = [a].[Id]
+      LEFT JOIN [Images] AS [i] ON [r].[Id] = [i].[RealEstateId]
+      WHERE ((([a].[City] = @__city_0) AND (@__min_1 <= [r].[Price])) AND ([r].[Price] <= @__max_2)) AND ([r].[Currency] = @__currency_3)
+      ORDER BY [r].[Id], [a].[Id]
+info: 01.04.2023 17:09:57.076 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (3ms) [Parameters=[@__city_0='Timisoara' (Size = 100), @__min_1='200', @__max_2='100000', @__currency_3='€' (Size = 15)], CommandType='Text', CommandTimeout='30']
+      SELECT [r].[Id], [r].[AreaId], [r].[Building], [r].[ContactMail], [r].[ContactName], [r].[ContactPhone], [r].[Currency], [r].[Description], [r].[DoorNumber], [r].[FloorNumber], [r].[LastUpdate], [r].[Latitude], [r].[Longitude], [r].[Number], [r].[PeriodOfTime], [r].[Price], [r].[Street], [r].[Title], [r].[TransactionType], [r].[Type], [r].[UserId], [r].[ZipCode], [o].[AC], [o].[AvailableStarting], [o].[BuiltUpArea], [o].[Internet], [o].[ParkingPlace], [o].[Rating], [a].[Id], [a].[AverageTemperature], [a].[City], [a].[Continent], [a].[Country], [a].[County], [a].[Criminality], [a].[LivingCost], [a].[Neighborhood], [a].[PhonePrefix], [a].[Pollution], [a].[ShortName], [a].[Traffic], [i].[Id], [i].[ImageUri], [i].[RealEstateId]
+      FROM [RealEstate] AS [r]
+      INNER JOIN [Offices] AS [o] ON [r].[Id] = [o].[Id]
+      INNER JOIN [Areas] AS [a] ON [r].[AreaId] = [a].[Id]
+      LEFT JOIN [Images] AS [i] ON [r].[Id] = [i].[RealEstateId]
+      WHERE ((([a].[City] = @__city_0) AND (@__min_1 <= [r].[Price])) AND ([r].[Price] <= @__max_2)) AND ([r].[Currency] = @__currency_3)
+      ORDER BY [r].[Id], [a].[Id]
+info: 01.04.2023 17:10:01.638 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (12ms) [Parameters=[@__city_0='Timisoara' (Size = 100), @__min_1='200', @__max_2='100000', @__currency_3='€' (Size = 15)], CommandType='Text', CommandTimeout='30']
+      SELECT [r].[Id], [r].[AreaId], [r].[Building], [r].[ContactMail], [r].[ContactName], [r].[ContactPhone], [r].[Currency], [r].[Description], [r].[DoorNumber], [r].[FloorNumber], [r].[LastUpdate], [r].[Latitude], [r].[Longitude], [r].[Number], [r].[PeriodOfTime], [r].[Price], [r].[Street], [r].[Title], [r].[TransactionType], [r].[Type], [r].[UserId], [r].[ZipCode], [o].[AC], [o].[AvailableStarting], [o].[BuiltUpArea], [o].[Internet], [o].[ParkingPlace], [o].[Rating], [a].[Id], [a].[AverageTemperature], [a].[City], [a].[Continent], [a].[Country], [a].[County], [a].[Criminality], [a].[LivingCost], [a].[Neighborhood], [a].[PhonePrefix], [a].[Pollution], [a].[ShortName], [a].[Traffic], [i].[Id], [i].[ImageUri], [i].[RealEstateId]
+      FROM [RealEstate] AS [r]
+      INNER JOIN [Offices] AS [o] ON [r].[Id] = [o].[Id]
+      INNER JOIN [Areas] AS [a] ON [r].[AreaId] = [a].[Id]
+      LEFT JOIN [Images] AS [i] ON [r].[Id] = [i].[RealEstateId]
+      WHERE ((([a].[City] = @__city_0) AND (@__min_1 <= [r].[Price])) AND ([r].[Price] <= @__max_2)) AND ([r].[Currency] = @__currency_3)
+      ORDER BY [r].[Id], [a].[Id]
+info: 01.04.2023 17:10:05.452 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (10ms) [Parameters=[@__city_0='Timisoara' (Size = 100), @__min_1='200', @__max_2='100000', @__currency_3='€' (Size = 15)], CommandType='Text', CommandTimeout='30']
+      SELECT [r].[Id], [r].[AreaId], [r].[Building], [r].[ContactMail], [r].[ContactName], [r].[ContactPhone], [r].[Currency], [r].[Description], [r].[DoorNumber], [r].[FloorNumber], [r].[LastUpdate], [r].[Latitude], [r].[Longitude], [r].[Number], [r].[PeriodOfTime], [r].[Price], [r].[Street], [r].[Title], [r].[TransactionType], [r].[Type], [r].[UserId], [r].[ZipCode], [o].[AC], [o].[AvailableStarting], [o].[BuiltUpArea], [o].[Internet], [o].[ParkingPlace], [o].[Rating], [a].[Id], [a].[AverageTemperature], [a].[City], [a].[Continent], [a].[Country], [a].[County], [a].[Criminality], [a].[LivingCost], [a].[Neighborhood], [a].[PhonePrefix], [a].[Pollution], [a].[ShortName], [a].[Traffic], [i].[Id], [i].[ImageUri], [i].[RealEstateId]
+      FROM [RealEstate] AS [r]
+      INNER JOIN [Offices] AS [o] ON [r].[Id] = [o].[Id]
+      INNER JOIN [Areas] AS [a] ON [r].[AreaId] = [a].[Id]
+      LEFT JOIN [Images] AS [i] ON [r].[Id] = [i].[RealEstateId]
+      WHERE ((([a].[City] = @__city_0) AND (@__min_1 <= [r].[Price])) AND ([r].[Price] <= @__max_2)) AND ([r].[Currency] = @__currency_3)
+      ORDER BY [r].[Id], [a].[Id]
+info: 01.04.2023 17:10:33.346 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (20ms) [Parameters=[@__city_0='Iasi' (Size = 100), @__rating_1='B' (Size = 10), @__minBuiltUpArea_2='50', @__p_3='yes' (Size = 50), @__p_4='yes' (Size = 50), @__p_5='yes' (Size = 50)], CommandType='Text', CommandTimeout='30']
+      SELECT [r].[Id], [r].[AreaId], [r].[Building], [r].[ContactMail], [r].[ContactName], [r].[ContactPhone], [r].[Currency], [r].[Description], [r].[DoorNumber], [r].[FloorNumber], [r].[LastUpdate], [r].[Latitude], [r].[Longitude], [r].[Number], [r].[PeriodOfTime], [r].[Price], [r].[Street], [r].[Title], [r].[TransactionType], [r].[Type], [r].[UserId], [r].[ZipCode], [o].[AC], [o].[AvailableStarting], [o].[BuiltUpArea], [o].[Internet], [o].[ParkingPlace], [o].[Rating], [a].[Id], [a].[AverageTemperature], [a].[City], [a].[Continent], [a].[Country], [a].[County], [a].[Criminality], [a].[LivingCost], [a].[Neighborhood], [a].[PhonePrefix], [a].[Pollution], [a].[ShortName], [a].[Traffic], [i].[Id], [i].[ImageUri], [i].[RealEstateId]
+      FROM [RealEstate] AS [r]
+      INNER JOIN [Offices] AS [o] ON [r].[Id] = [o].[Id]
+      INNER JOIN [Areas] AS [a] ON [r].[AreaId] = [a].[Id]
+      LEFT JOIN [Images] AS [i] ON [r].[Id] = [i].[RealEstateId]
+      WHERE ((((([a].[City] = @__city_0) AND ([o].[Rating] = @__rating_1)) AND (@__minBuiltUpArea_2 <= [o].[BuiltUpArea])) AND ([o].[AC] = @__p_3)) AND ([o].[Internet] = @__p_4)) AND ([o].[ParkingPlace] = @__p_5)
+      ORDER BY [r].[Id], [a].[Id]
+info: 01.04.2023 17:11:05.757 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[@__p_0='100'], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_0) [a].[Id], [a].[AverageTemperature], [a].[City], [a].[Continent], [a].[Country], [a].[County], [a].[Criminality], [a].[LivingCost], [a].[Neighborhood], [a].[PhonePrefix], [a].[Pollution], [a].[ShortName], [a].[Traffic]
+      FROM [Areas] AS [a]
+info: 01.04.2023 17:11:09.815 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (6ms) [Parameters=[@__userId_0='a25fd42c-5dd6-4003-9e69-cd4561999fff' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT [r].[Id], [r].[AreaId], [r].[Building], [r].[ContactMail], [r].[ContactName], [r].[ContactPhone], [r].[Currency], [r].[Description], [r].[DoorNumber], [r].[FloorNumber], [r].[LastUpdate], [r].[Latitude], [r].[Longitude], [r].[Number], [r].[PeriodOfTime], [r].[Price], [r].[Street], [r].[Title], [r].[TransactionType], [r].[Type], [r].[UserId], [r].[ZipCode], [o].[AC], [o].[AvailableStarting], [o].[BuiltUpArea], [o].[Internet], [o].[ParkingPlace], [o].[Rating], [a].[Id], [a].[AverageTemperature], [a].[City], [a].[Continent], [a].[Country], [a].[County], [a].[Criminality], [a].[LivingCost], [a].[Neighborhood], [a].[PhonePrefix], [a].[Pollution], [a].[ShortName], [a].[Traffic], [i].[Id], [i].[ImageUri], [i].[RealEstateId]
+      FROM [RealEstate] AS [r]
+      INNER JOIN [Offices] AS [o] ON [r].[Id] = [o].[Id]
+      INNER JOIN [Areas] AS [a] ON [r].[AreaId] = [a].[Id]
+      LEFT JOIN [Images] AS [i] ON [r].[Id] = [i].[RealEstateId]
+      WHERE [r].[UserId] = @__userId_0
+      ORDER BY [r].[Id], [a].[Id]
+info: 01.04.2023 17:11:11.821 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[@__p_0='100'], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(@__p_0) [a].[Id], [a].[AverageTemperature], [a].[City], [a].[Continent], [a].[Country], [a].[County], [a].[Criminality], [a].[LivingCost], [a].[Neighborhood], [a].[PhonePrefix], [a].[Pollution], [a].[ShortName], [a].[Traffic]
+      FROM [Areas] AS [a]
+info: 01.04.2023 17:12:33.846 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (5ms) [Parameters=[@p0='3', @p1='-' (Size = 4000), @p2='bogdan.admin@example.com' (Size = 4000), @p3='Bogdan Florea' (Nullable = false) (Size = 50), @p4='0788443344' (Nullable = false) (Size = 4000), @p5='$' (Nullable = false) (Size = 15), @p6='Nice office in Iasi' (Size = 1000), @p7='20' (Nullable = true), @p8='1' (Nullable = true), @p9='2023-04-01T14:12:33.5840000Z' (Nullable = true), @p10='47.156296708523165', @p11='27.585312068091845', @p12='21' (Size = 4000), @p13='month' (Size = 4000), @p14='800', @p15='Palat' (Nullable = false) (Size = 50), @p16='Best buy!' (Nullable = false) (Size = 50), @p17='Rent' (Nullable = false) (Size = 5), @p18='2', @p19='a25fd42c-5dd6-4003-9e69-cd4561999fff' (Size = 450), @p20='777444' (Nullable = false) (Size = 50)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      INSERT INTO [RealEstate] ([AreaId], [Building], [ContactMail], [ContactName], [ContactPhone], [Currency], [Description], [DoorNumber], [FloorNumber], [LastUpdate], [Latitude], [Longitude], [Number], [PeriodOfTime], [Price], [Street], [Title], [TransactionType], [Type], [UserId], [ZipCode])
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+      SELECT [Id]
+      FROM [RealEstate]
+      WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+info: 01.04.2023 17:12:33.879 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[@p21='1954', @p22='yes' (Size = 50), @p23='2023-04-01T14:12:33.5840000Z', @p24='100', @p25='yes' (Size = 50), @p26='yes' (Size = 50), @p27='A' (Nullable = false) (Size = 10)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      INSERT INTO [Offices] ([Id], [AC], [AvailableStarting], [BuiltUpArea], [Internet], [ParkingPlace], [Rating])
+      VALUES (@p21, @p22, @p23, @p24, @p25, @p26, @p27);
+info: 01.04.2023 17:12:35.608 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (2ms) [Parameters=[@p0='https://estatewebmanager.blob.core.windows.net/estates/office4.jpg' (Nullable = false) (Size = 4000), @p1='1954'], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      INSERT INTO [Images] ([ImageUri], [RealEstateId])
+      VALUES (@p0, @p1);
+      SELECT [Id]
+      FROM [Images]
+      WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+info: 01.04.2023 17:12:39.951 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (8ms) [Parameters=[@__userId_0='a25fd42c-5dd6-4003-9e69-cd4561999fff' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT [r].[Id], [r].[AreaId], [r].[Building], [r].[ContactMail], [r].[ContactName], [r].[ContactPhone], [r].[Currency], [r].[Description], [r].[DoorNumber], [r].[FloorNumber], [r].[LastUpdate], [r].[Latitude], [r].[Longitude], [r].[Number], [r].[PeriodOfTime], [r].[Price], [r].[Street], [r].[Title], [r].[TransactionType], [r].[Type], [r].[UserId], [r].[ZipCode], [o].[AC], [o].[AvailableStarting], [o].[BuiltUpArea], [o].[Internet], [o].[ParkingPlace], [o].[Rating], [a].[Id], [a].[AverageTemperature], [a].[City], [a].[Continent], [a].[Country], [a].[County], [a].[Criminality], [a].[LivingCost], [a].[Neighborhood], [a].[PhonePrefix], [a].[Pollution], [a].[ShortName], [a].[Traffic], [i].[Id], [i].[ImageUri], [i].[RealEstateId]
+      FROM [RealEstate] AS [r]
+      INNER JOIN [Offices] AS [o] ON [r].[Id] = [o].[Id]
+      INNER JOIN [Areas] AS [a] ON [r].[AreaId] = [a].[Id]
+      LEFT JOIN [Images] AS [i] ON [r].[Id] = [i].[RealEstateId]
+      WHERE [r].[UserId] = @__userId_0
+      ORDER BY [r].[Id], [a].[Id]
+info: 01.04.2023 17:13:29.657 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[@__officeId_0='1954'], CommandType='Text', CommandTimeout='30']
+      SELECT [t].[Id], [t].[AreaId], [t].[Building], [t].[ContactMail], [t].[ContactName], [t].[ContactPhone], [t].[Currency], [t].[Description], [t].[DoorNumber], [t].[FloorNumber], [t].[LastUpdate], [t].[Latitude], [t].[Longitude], [t].[Number], [t].[PeriodOfTime], [t].[Price], [t].[Street], [t].[Title], [t].[TransactionType], [t].[Type], [t].[UserId], [t].[ZipCode], [t].[AC], [t].[AvailableStarting], [t].[BuiltUpArea], [t].[Internet], [t].[ParkingPlace], [t].[Rating], [t].[Id0], [t].[AverageTemperature], [t].[City], [t].[Continent], [t].[Country], [t].[County], [t].[Criminality], [t].[LivingCost], [t].[Neighborhood], [t].[PhonePrefix], [t].[Pollution], [t].[ShortName], [t].[Traffic], [i].[Id], [i].[ImageUri], [i].[RealEstateId]
+      FROM (
+          SELECT TOP(2) [r].[Id], [r].[AreaId], [r].[Building], [r].[ContactMail], [r].[ContactName], [r].[ContactPhone], [r].[Currency], [r].[Description], [r].[DoorNumber], [r].[FloorNumber], [r].[LastUpdate], [r].[Latitude], [r].[Longitude], [r].[Number], [r].[PeriodOfTime], [r].[Price], [r].[Street], [r].[Title], [r].[TransactionType], [r].[Type], [r].[UserId], [r].[ZipCode], [o].[AC], [o].[AvailableStarting], [o].[BuiltUpArea], [o].[Internet], [o].[ParkingPlace], [o].[Rating], [a].[Id] AS [Id0], [a].[AverageTemperature], [a].[City], [a].[Continent], [a].[Country], [a].[County], [a].[Criminality], [a].[LivingCost], [a].[Neighborhood], [a].[PhonePrefix], [a].[Pollution], [a].[ShortName], [a].[Traffic]
+          FROM [RealEstate] AS [r]
+          INNER JOIN [Offices] AS [o] ON [r].[Id] = [o].[Id]
+          INNER JOIN [Areas] AS [a] ON [r].[AreaId] = [a].[Id]
+          WHERE [r].[Id] = @__officeId_0
+      ) AS [t]
+      LEFT JOIN [Images] AS [i] ON [t].[Id] = [i].[RealEstateId]
+      ORDER BY [t].[Id], [t].[Id0]
+info: 01.04.2023 17:13:29.690 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[@p0='1952'], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      DELETE FROM [Images]
+      WHERE [Id] = @p0;
+      SELECT @@ROWCOUNT;
+info: 01.04.2023 17:13:29.693 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (1ms) [Parameters=[@p0='1954'], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      DELETE FROM [Offices]
+      WHERE [Id] = @p0;
+      SELECT @@ROWCOUNT;
+info: 01.04.2023 17:13:29.697 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (4ms) [Parameters=[@p1='1954'], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      DELETE FROM [RealEstate]
+      WHERE [Id] = @p1;
+      SELECT @@ROWCOUNT;
+info: 01.04.2023 17:13:29.749 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command) 
+      Executed DbCommand (6ms) [Parameters=[@__userId_0='a25fd42c-5dd6-4003-9e69-cd4561999fff' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT [r].[Id], [r].[AreaId], [r].[Building], [r].[ContactMail], [r].[ContactName], [r].[ContactPhone], [r].[Currency], [r].[Description], [r].[DoorNumber], [r].[FloorNumber], [r].[LastUpdate], [r].[Latitude], [r].[Longitude], [r].[Number], [r].[PeriodOfTime], [r].[Price], [r].[Street], [r].[Title], [r].[TransactionType], [r].[Type], [r].[UserId], [r].[ZipCode], [o].[AC], [o].[AvailableStarting], [o].[BuiltUpArea], [o].[Internet], [o].[ParkingPlace], [o].[Rating], [a].[Id], [a].[AverageTemperature], [a].[City], [a].[Continent], [a].[Country], [a].[County], [a].[Criminality], [a].[LivingCost], [a].[Neighborhood], [a].[PhonePrefix], [a].[Pollution], [a].[ShortName], [a].[Traffic], [i].[Id], [i].[ImageUri], [i].[RealEstateId]
+      FROM [RealEstate] AS [r]
+      INNER JOIN [Offices] AS [o] ON [r].[Id] = [o].[Id]
+      INNER JOIN [Areas] AS [a] ON [r].[AreaId] = [a].[Id]
+      LEFT JOIN [Images] AS [i] ON [r].[Id] = [i].[RealEstateId]
+      WHERE [r].[UserId] = @__userId_0
+      ORDER BY [r].[Id], [a].[Id]

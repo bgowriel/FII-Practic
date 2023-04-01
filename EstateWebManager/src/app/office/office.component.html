@@ -1,0 +1,90 @@
+<div class="offices">
+  <section class="side-menu">
+    <mat-accordion>
+       <mat-expansion-panel (afterExpand)="showOffices()" (afterCollapse)="hideOffices()">
+        <mat-expansion-panel-header>
+          <mat-panel-title>Find in your area</mat-panel-title>
+        </mat-expansion-panel-header>
+        <app-select-address (currentCountry)="setCountry($event)" (currentCity)="setCity($event)" (currentStreet)="setStreet($event)" (submit)="fetchData($event)"></app-select-address>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel (afterExpand)="showOffices()" (afterCollapse)="hideOffices()">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Search by price range
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+    
+        <app-select-price (currentCity)="setCity($event)" (minPrice)="setMinPrice($event)" (maxPrice)="setMaxPrice($event)" (currency)="setCurrency($event)" (submit)="fetchData($event)"></app-select-price>
+      </mat-expansion-panel>
+    
+      <mat-expansion-panel (afterExpand)="showOffices()" (afterCollapse)="hideOffices()">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Filter with options
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+    
+        <app-search-with-options (currentCity)="setCity($event)" (acChecked)="setAc($event)" (internetChecked)="setInternet($event)" (parkingChecked)="setParking($event)" (rating)="setRating($event)" (minimumArea)="setArea($event)" (submit)="fetchData($event)"></app-search-with-options>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel (afterExpand)="showPostOffer()" (afterCollapse)="hidePostOffer()">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Post an offer
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-label class="post-an-offer">Enter the information requested, please.</mat-label>
+        <!-- <mat-form-field appearance="fill">
+          <mat-label>Info</mat-label>
+          <input matInput>
+        </mat-form-field> -->
+      </mat-expansion-panel>
+
+      <mat-expansion-panel (afterExpand)="fetchData('byUser');dashboard=true;showOffices();" (afterCollapse)="dashboard=false;hideOffices()">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Manage your offers
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-label class="manage-offers">Here are your offers.</mat-label>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </section>
+
+  <section *ngIf="postOffer">
+    <div>
+      <p class="postOffer-header">YOUR OFFER</p>
+      <app-post-offer></app-post-offer>
+    </div>
+  </section>
+  
+  <section *ngIf="_showOffices && offices" class="main-content">
+    <div *ngIf="details" class="estate-details">
+      <div class="buttons">
+        <button mat-button class="back-button" (click)="details=false">Back</button>
+        <button *ngIf="dashboard" mat-button class="delete-button" (click)="deleteEstate();details=false;">Delete</button>
+      </div>
+      <app-estate-details [office]="currentOffice"></app-estate-details>
+    </div>
+
+    <div *ngIf="!details" class="main-content-header"><p>Result list</p></div>
+    <app-paginator *ngIf="!details" class="result-paginator" (pageEvent)="pageChange($event)" [itemsTotalCount]="resultsCount"></app-paginator>
+    <cdk-virtual-scroll-viewport *ngIf="!details" class="results-viewport" [itemSize]="30">
+      <div *cdkVirtualFor="let office of offices; let odd = odd;" class="office-item" [class.office-alternate]="odd">
+        <div class="info-area">
+          <div>
+            <img [src]="office.images[0].imageUri" />
+          </div>
+          <div class="info-area-text" (click)="currentOffice=office; details=true;">
+            <p><span>Title: </span>{{ office.title }}</p>
+            <p><span>Contact: </span>{{ office.contactName }}</p>
+            <p><span>Address: </span>{{ office.street }} {{ office.number }}</p>
+            <p><span>Rent at </span>{{ office.price }} {{ office.currency }} per {{ office.periodOfTime }}.</p>
+          </div>
+        </div>
+        <div class="office-item-border"></div>
+      </div>
+    </cdk-virtual-scroll-viewport>
+  </section>
+</div>

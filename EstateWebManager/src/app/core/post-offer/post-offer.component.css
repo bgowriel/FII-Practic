@@ -1,0 +1,127 @@
+.post-offer {
+    display: flex;
+    flex-direction: column;
+    line-height: 3rem;
+    color: black;
+    width: 70vw;
+    font-size: 1.6rem;
+    font-weight: 900;
+    background: linear-gradient(90deg, rgba(236,198,75,.85) 0%, rgba(236,198,75,.75) 70%, rgba(255,199,19,0) 100%);
+    padding: 3rem 2rem 2rem 2rem;
+}
+
+mat-label, label {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: black;
+    letter-spacing: .2rem;
+}
+
+mat-form-field {
+    margin-left: 1rem;
+}
+
+.header-info, .contact-info, .estate-address, .estate-location, .estate-info, .options-select {
+    display: flex;
+    flex-direction: row;
+    width: 90rem;
+}
+
+.title {
+    width: 25rem;
+}
+
+.description {
+    width: 65rem;
+}
+
+.contact-name, .contact-email {
+    width: 35rem;
+}
+
+.contact-phone {
+    width: 20rem;
+}
+
+.street {
+    width: 35rem;
+}
+
+.number, .floor, .door {
+    width: 17.5rem;
+}
+
+.area {
+    width: 56rem;
+}
+
+.zip-code {
+    width: 12rem;
+}
+
+.latitude, .longitude {
+    width: 11rem;
+}
+
+
+.transaction-type {
+    width: 30rem;
+}
+
+.price, .currency, .rating, .built-up-area {
+    width: 15rem;
+}
+
+.options-select {
+    align-items: baseline;
+}
+
+.ac {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 2.5rem;
+    margin-right: 1rem;
+}
+
+.internet, .parking, .image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+input[type="checkbox"] {
+    height: 2rem;
+    width: 2rem;
+    margin-left: 1rem;
+}
+
+.image>mat-label {
+    margin-right: 1rem;
+}
+
+.mat-button {
+    font-size: 1.8rem;
+    height: 4rem;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,.04);
+    text-shadow: .1rem .1rem rgba(0, 0, 0, 0.4);
+}
+
+.mat-button.submit {
+    font-family: 'Lato';
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--summer-gold);
+    margin-left: 1rem;
+    width: 14rem;
+    height: 5rem;
+    background-color: var(--menu-background-pale);
+}
+
+#cdk-overlay-0 {
+    max-width: 70rem;
+}

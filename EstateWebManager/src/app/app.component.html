@@ -1,0 +1,6 @@
+<div class="blur-background" *ngIf="!this.authService.isAuthenticated"></div>
+<app-navigation-bar *ngIf="this.authService.isAuthenticated"></app-navigation-bar>
+<section>
+    <router-outlet></router-outlet>
+</section>
+<footer><p>Bogdan Florea @ 2023</p></footer>

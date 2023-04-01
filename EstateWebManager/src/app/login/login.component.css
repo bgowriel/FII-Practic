@@ -1,0 +1,110 @@
+.landing-page {
+    display: grid;
+    height: 90vh;
+    width: 100vw;
+    grid-template-columns: 60% 1fr;
+    grid-template-rows: 1fr;
+    gap: 0rem 2rem;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: "logo form";
+}
+
+.logo-section {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    /* background-color: #ecc64b55; */
+    /* background: linear-gradient(20deg, #9bb7c522 0%, #1e439399 50%, #1e4393 100%); */
+}
+
+app-logo {
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.logo-text {
+    /* margin-top: 4rem; */
+    position: relative;
+    padding: 3rem 3rem 3rem 30rem;
+}
+
+.logo-text > h1 {
+    text-shadow: .2rem .2rem rgba(0, 0, 0, 0.5);
+    font-family: 'Lato', sans-serif;
+    letter-spacing: .3rem;
+    font-weight: 800;
+    font-size: 5rem;
+    /* color: var(--yellow); */
+    line-height: 8rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-text > p {
+    font-size: 3rem;
+    letter-spacing: .5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: .1rem .1rem rgba(0, 0, 0, 0.5);
+    font-style: italic;
+    text-align: center;
+    /* color: var(--yellow); */
+    color:#212529;
+}
+
+.login-form {
+    padding-right: 35%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff; /*#ecc64bdd;*/
+    padding: 5rem 5rem 5rem 5rem;
+    align-items: center;
+}
+
+.button-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.mat-form-field {
+    width: 35rem;
+}
+
+.mat-button {
+    font-family: 'Lato';
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #04093a;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 14rem;
+    background-color: #ecc64b99;
+}
+
+mat-icon.isHidden {
+    font-size: 2.5rem;
+}
+
+div.error {
+    color: red;
+}
+
+div.success {
+    color: blue;
+}
+
+div.error, div.success {
+    text-align: center;
+    z-index: 1;
+}

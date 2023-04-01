@@ -1,0 +1,5 @@
+mat-paginator {
+    background-color: var(--menu-background-pale);
+    font-size: 1.5rem;
+    color: white;
+}

@@ -1,0 +1,54 @@
+<div class="user-info">
+  <mat-icon id="logout" (click)="logout()">power_settings_new</mat-icon>
+  <p>{{ user }}<span> {{ admin }}</span></p>
+</div>
+<ul class="navigation-bar">
+  <li>
+    <a routerLink="offices" data-title="Home" class="navigation-option home"
+      >Home</a
+    >
+  </li>
+  <li>
+    <a routerLink="offices" data-title="Flats" class="navigation-option flats">Flats</a>
+    <!-- <nav class="flats-options options">
+      <a rel="external" target="_self" href="flats-in-area.html"
+        >Find in area</a
+      >
+      <a rel="external" target="_self" href="">Filtered search</a>
+      <a rel="external" target="_self" href="">Post or update offer</a>
+      <a rel="external" target="_self" href="">Delete offer</a>
+    </nav> -->
+  </li>
+  <li>
+    <a routerLink="offices" data-title="Offices" class="navigation-option offices"
+      >Offices</a
+    >
+    <!-- <nav class="offices-options options">
+      <a rel="external" target="_self" href="">Find in area</a>
+      <a rel="external" target="_self" href="">Filtered search</a>
+      <a rel="external" target="_self" href="">Post or update offer</a>
+      <a rel="external" target="_self" href="">Delete offer</a>
+    </nav> -->
+  </li>
+  <li>
+    <a routerLink="offices" data-title="Houses" class="navigation-option houses">Houses</a>
+    <!-- <nav class="houses-options options">
+      <a rel="external" target="_self" href="">Find in area</a>
+      <a rel="external" target="_self" href="">Filtered search</a>
+      <a rel="external" target="_self" href="">Post or update offer</a>
+      <a rel="external" target="_self" href="">Delete offer</a>
+    </nav> -->
+  </li>
+  <li>
+    <a routerLink="offices" data-title="Lands" class="navigation-option lands">Lands</a>
+    <!-- <nav class="lands-options options">
+      <a rel="external" target="_self" href="">Find in area</a>
+      <a rel="external" target="_self" href="">Filtered search</a>
+      <a rel="external" target="_self" href="">Post or update offer</a>
+      <a rel="external" target="_self" href="">Delete offer</a>
+    </nav> -->
+  </li>
+  <li>
+    <a routerLink="about" data-title="About" class="navigation-option about">About</a>
+  </li>
+</ul>
