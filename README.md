@@ -11,3 +11,4 @@ It consists in developing a web application for the management,
  ![Search with options](search-with-options.png)
  ![Post offer](post-offer-view.png)
  ![Your offer](your-offer-view.png)
+ ![DB-diagram](db-diagram.png)
