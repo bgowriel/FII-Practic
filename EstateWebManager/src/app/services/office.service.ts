@@ -9,7 +9,8 @@ import { OfficePut } from '../models/office-put';
   providedIn: 'root'
 })
 export class OfficeService {
-  apiUrl: string = 'https://localhost:7147/api/offices';
+  // apiUrl: string = 'https://localhost:7147/api/offices';
+  apiUrl: string = 'https://estatewebmanagerapi20230404103531.azurewebsites.net/api/offices';
 
   constructor(private httpClient: HttpClient) { }
 

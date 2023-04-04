@@ -8,7 +8,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ImageService {
-  apiUrl: string = 'https://localhost:7147/api/images';
+  // apiUrl: string = 'https://localhost:7147/api/images';
+  apiUrl: string = 'https://estatewebmanagerapi20230404103531.azurewebsites.net/api/images';
 
   constructor(private httpClient: HttpClient) { }
 

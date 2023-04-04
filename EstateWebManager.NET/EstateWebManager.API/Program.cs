@@ -21,6 +21,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.AspNetCore.Mvc;
 using Hellang.Middleware.ProblemDetails;
+using Microsoft.Extensions.Configuration;
 
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
@@ -73,7 +74,8 @@ builder.Services.AddScoped<ILandRepository, LandRepository>();
 builder.Services.AddScoped<IHouseRepository, HouseRepository>();
 builder.Services.AddScoped<IImageRepository, ImageRepository>();
 
-builder.Services.AddDbContext<DatabaseContext>();// (options =>
+string connectionString = builder.Configuration.GetConnectionString("EstateWebManager");
+builder.Services.AddDbContext<DatabaseContext>(options => options.UseSqlServer(connectionString));// (options =>
                                                  //options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
 builder.Services.AddIdentity<User, IdentityRole>()
@@ -157,6 +159,11 @@ app.UseCors(MyAllowSpecificOrigins);
 app.UseAuthentication();
 
 app.UseAuthorization();
+
+//
+app.UseDefaultFiles();
+app.UseStaticFiles();
+//
 
 app.UseMostWantedCityMiddleware();
 

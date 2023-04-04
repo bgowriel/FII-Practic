@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-const AUTH_API = 'https://localhost:7147/api/users/';
+// const AUTH_API = 'https://localhost:7147/api/users/';
+const AUTH_API = 'https://estatewebmanagerapi20230404103531.azurewebsites.net/api/users/';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })

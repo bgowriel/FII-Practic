@@ -7,7 +7,8 @@ import { Area } from '../models/area';
   providedIn: 'root',
 })
 export class AreaService implements OnInit {
-  apiUrl = 'https://localhost:7147/api/areas';
+  // apiUrl = 'https://localhost:7147/api/areas';
+  apiUrl = 'https://estatewebmanagerapi20230404103531.azurewebsites.net/api/areas';
 
   constructor(private httpClient: HttpClient) {}
 
